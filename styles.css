@@ -1,7 +1,11 @@
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -12,10 +16,15 @@ header {
     background-color: #1F2937;
 }
 
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
 .logo {
     height: 48px;
     width: 100px;
-    margin-left: 100px;
+    margin-left: 200px;
 
 }
 
@@ -23,10 +32,152 @@ header {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 a {
     text-decoration: none;
     color: #E5E7EB;
 }
+
+.hero {
+    background-color: #1F2937;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.hero-text,
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.hero-text {
+    justify-content: space-between;
+}
+
+.hero-image {
+    height: 250px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.hero-description {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0px;
+}
+
+.get-started-button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    height: auto;
+    font-weight: 500;
+}
+
+.get-started-button:hover {
+    background-color: #2563EB;
+}
+
+.feature-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    border-color: #2563EB;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 20px;
+}
+
+.features h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature-description {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #6B7280;
+    margin-top: 8px;
+    max-width: 200px;
+    align-self: center;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    padding-left: 420px;
+    padding-right: 420px;
+}
+
+.quote, .quote-author {
+    padding: 0px;
+    margin: 0px;
+}
+
+.quote-author {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 10;
+    flex-wrap: wrap;
+}
+
